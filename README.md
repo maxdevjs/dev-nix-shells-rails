@@ -12,15 +12,16 @@ A [nix-shell](https://nixos.org/manual/nix/stable/#description-13) template to s
 
 Built gathering inspiration from several [sources](#resources), it makes available:
 
-- [Ruby](https://www.ruby-lang.org/en/)
-- [solargraph](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#solargraph) ([LSP](https://microsoft.github.io/language-server-protocol/))
+- `unstable.`[ruby_3_0](https://www.ruby-lang.org/en/)
+- `unstable.`[rubyPackages_3_0.rails](https://rubyonrails.org/)
+- `unstable.`[rubyPackages.solargraph](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#solargraph) ([LSP](https://microsoft.github.io/language-server-protocol/))
 - environment opinions:
   - several environment variables are set
   - `Gemfile` is created (for [solargraph](https://github.com/neovim/nvim-lspconfig/blob/master/CONFIG.md#solargraph) to launch)
   - `gems` are installed locally (in project folder)
   - ...
-- [PostgreSQL](https://www.postgresql.org/) setup
-  - check the relevant [Phoenix shell](../phoenix/README.md#working-with-a-local-postgresql-instance) section
+- `unstable.`[postgresql_14](https://www.postgresql.org/) setup
+  - check the relevant [Phoenix nix-shell](https://github.com/maxdevjs/dev-nix-shells-phoenix#working-with-a-local-postgresql-instance) section
     - TODO: complete [PostgreSQL](https://www.postgresql.org/) section here
 
 ## Resources
